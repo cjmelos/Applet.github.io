@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="funciones.js"></script>
+	<link href="styless.css" rel="stylesheet" type="text/css"> 
+	<title>Operaciones entre conjuntos</title>
+</head>
+<body>
+
+	<header>
+		<h1>Operaciones entre cuatro conjuntos</h1>
+	</header>
+	<br><br>
+	<label for="conjunto1">Conjunto 1: </label>
+	<input type="text" id="conjunto1">
+	<br>
+	<label for="conjunto2">Conjunto 2: </label>
+	<input type="text" id="conjunto2">
+	<br>
+	<label for="conjunto3">Conjunto 3: </label>
+	<input type="text" id="conjunto3">
+	<br>
+	<label for="conjunto4">Conjunto 4:</label>
+	<input type="text" id="conjunto4">
+	<br>
+	<label for="operacion">Operación:</label>
+	<select id="operacion">
+		<option value="union">Unión</option>
+		<option value="interseccion">Intersección</option>
+		<option value="diferencia">Diferencia</option>
+	</select><br><br>
+	<br>
+	<button onclick="calcularOperacion4()">Calcular</button>
+	<br><br>
+	<label for="conjuntoUniversal">Conjunto universal:</label>
+	<span id="conjuntoUniversal"></span>
+	<br><br>
+	<label for="resultado">Resultado:</label>
+	<span id="resultado"></span>
+	<h2><br>
+        ¿Cómo funciona?
+    </h2><br>
+    <p>
+        Cada una de las páginas está configurada para realizar la operación seleccionada utilizando todos los conjuntos que interactuen en el ejercicio.
+        Supongamos que escogimos la interseccion entre cuatro conjuntos, el resultado que veríamos sería:
+    </p><br>
+    <div style="text-align: center;">
+		<a href="http://padron.entretemas.com.ve/cursos/logica/Conjuntos.htm">
+			<img src="imgs/cuatroConjuntos.png">
+		</a>
+   <br><br>
+
+   <p>
+    Sin importar las otras interacciones, el aplicativo se enfoca en la generalidad del total de los conjuntos inmsersos en el problema,
+    así permite vislumbrar como funcionan los conjuntos cuando estos son afectados por otros.
+   </p>
+	<footer>
+		<hr />
+			Página inspirada en el ejercicio hecho por Jersson Javier Ortegate Banderas (20201020139), estudiante de la Universidad
+			Distrital Fransisco José de Caldas.
+			Referencia libro: Ejercicio 2,14 propuesto en Walpole, R. E., Myers, R. H., Myers, S. L., y Ye, K. Probabilidad y estadística para ingeniería y ciencias. Octava edición. México: Pearson Educación (2007, p.39)
+	</footer>
+</body>
+</html>
